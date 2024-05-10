@@ -1,0 +1,62 @@
+.search-filters {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.search-filters input[type="text"],
+.search-filters select {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; 
+}
+
+.search-filters input[type="text"] {
+    flex: 0.5; 
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.search-filters select {
+    width: auto;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-filters select:not(:last-child) {
+    margin-right: 5px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+.table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

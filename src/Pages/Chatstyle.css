@@ -1,0 +1,112 @@
+
+.containerchat {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    overflow: hidden;
+}
+.input-wide {
+    width: 80%; 
+}
+.users, .chat {
+    overflow-y: auto;
+}
+
+.users {
+    background-color: #e6f4ff; 
+    border-right: 1px solid #ccc; 
+    padding: 10px;
+    overflow-y: auto; 
+}
+
+.users h2 {
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.users li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.users li:hover {
+    background-color: #d1e7fd;
+    color: #0056b3; 
+}
+
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.chat-box, button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chat-box {
+    flex-grow: 1;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.users li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.users li:hover {
+    background-color: #efefef;
+}
+
+.messages p {
+    margin: 5px 0;
+}
+.message {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.message-sender {
+    background-color: #f1f1f1; 
+    text-align: left;
+}
+
+.message-receiver {
+    background-color: #d1e7fd; 
+    text-align: right;
+}
+
+.timestamp {
+    display: block;
+    font-size: 0.75rem; 
+    color: #888;
+    margin-top: 5px;
+}
