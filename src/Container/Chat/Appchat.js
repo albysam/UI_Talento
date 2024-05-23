@@ -13,7 +13,7 @@ const Appchat = () => {
   const joinRoom = async (user, room) => {
     try {
       const connection = new HubConnectionBuilder()
-        .withUrl("https://talentsapi.azurewebsites.net/chat")
+        .withUrl("https://talentodotnetapi.azurewebsites.net/chat")
         .configureLogging(LogLevel.Information)
         .build();
 

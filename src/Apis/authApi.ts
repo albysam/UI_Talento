@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://talentsapi.azurewebsites.net/api/",
+    baseUrl: "https://talentodotnetapi.azurewebsites.net/api/",
   }),
   endpoints: (builder) => ({
     registerUser: builder.mutation({

@@ -42,7 +42,7 @@ const Chatt = () => {
 
     useEffect(() => {
         const newConnection = new HubConnectionBuilder()
-            .withUrl("https://talentsapi.azurewebsites.net/chatt", { skipNegotiation: true, transport: HttpTransportType.WebSockets })
+            .withUrl("https://talentodotnetapi.azurewebsites.net/chatt", { skipNegotiation: true, transport: HttpTransportType.WebSockets })
             .configureLogging(LogLevel.Information)
             .build();
     
@@ -85,7 +85,7 @@ const Chatt = () => {
     const handleEmployeeClick = async (name: React.SetStateAction<string>) => {
         setReceiver(name);
         try {
-            const response = await fetch(`https://talentsapi.azurewebsites.net/api/message/${userData.fullName}/${name}`);
+            const response = await fetch(`https://talentodotnetapi.azurewebsites.net/api/message/${userData.fullName}/${name}`);
             const data = await response.json();
             setMessages(data);
         } catch (error) {

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/140064d6-a839-4e3f-840b-cc91b283d8ef/resourceGroups/react-dotnetproject/providers/Microsoft.Web/sites/talentoreactui",
+    "appService.deploySubpath": "build"
+}

@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const shiftApi = createApi({
   reducerPath: "shiftApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://talentsapi.azurewebsites.net/api/",
+    baseUrl: "https://talentodotnetapi.azurewebsites.net/api/",
     prepareHeaders: (headers: Headers, api) => {
       const token = localStorage.getItem("token");
       token && headers.append("Authorization", "Bearer " + token);

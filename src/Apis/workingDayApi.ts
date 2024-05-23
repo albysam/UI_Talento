@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const workingDayApi = createApi({
   reducerPath: "workingDayApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://talentsapi.azurewebsites.net/api/",
+    baseUrl: "https://talentodotnetapi.azurewebsites.net/api/",
     prepareHeaders: (headers: Headers, api) => {
       const token = localStorage.getItem("token");
       token && headers.append("Authorization", "Bearer " + token);
