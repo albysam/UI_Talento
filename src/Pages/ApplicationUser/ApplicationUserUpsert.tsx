@@ -129,11 +129,6 @@ function ApplicationUserUpsert() {
     setApplicationUserInputs(tempData);
   };
   
-
-  
-
-  
-
   const [dateOfJoining, setDateOfJoining] = useState<Date>(new Date()); 
   const [dateOfLeaving, setDateOfLeaving] = useState<Date>(new Date());
   
@@ -143,9 +138,6 @@ function ApplicationUserUpsert() {
       ...applicationUserInputs,
       dateOfJoining: date,
     });
-
-   
-
 
   };
 
