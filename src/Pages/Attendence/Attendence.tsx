@@ -92,6 +92,7 @@ function Attendence() {
     formData.append("workedHours", attendenceInputs.workedHours);
     formData.append("breakHours", attendenceInputs.breakHours);
     formData.append("status", attendenceInputs.status.toString());
+    //formData.append("status", attendenceInputs.status.toString());
   
     let response;
     if (id) {
