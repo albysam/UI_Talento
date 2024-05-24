@@ -84,8 +84,7 @@ function HolidayList() {
     <i className="bi bi-trash-fill"></i>
   </button>
 </div>
-
-              </div>
+</div>
              );
             })}
           </div>
